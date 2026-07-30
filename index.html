@@ -3,9 +3,18 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>Sayan F1 </title>     
+  <title>TNT1</title>     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/shaka-player.ui.min.js" crossorigin="anonymous"></script>  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.11/controls.min.css" crossorigin="anonymous">  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMP9REY96D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FMP9REY96D');
+</script>
   <style>  
    * { margin: 0; padding: 0; box-sizing: border-box; }  
     html, body {  
@@ -36,9 +45,12 @@
     }  
   </style>  
 </head>  
-<body>  
+
+ 
+  
+  <body>  
   <div class="shaka-video-container" data-shaka-player>  
-    <video autoplay playsinline preload="metadata" poster=""></video>  
+    <video autoplay playsinline preload="metadata" poster="https://www.newscaststudio.com/wp-content/uploads/2023/07/tnt-sports-uk-branding.jpg"></video>  
   </div>  
   
   <script>  
@@ -64,24 +76,25 @@
           'quality', 'fullscreen'  
         ],  
         volumeBarColors: {  
-          base: 'rgba(255, 192, 203, 0.3)',  
-          level: 'rgb(255, 105, 180)'  
-        },  
-        seekBarColors: {  
-          base: 'rgba(255, 255, 0, 0.3)',  
-          buffered: 'rgba(255, 255, 0, 0.6)',  
-          played: 'rgb(255, 255, 0)'  
-        }  
+  base: 'rgba(0, 136, 255, 0.3)',  
+  level: 'rgb(0, 136, 255)'  
+},  
+seekBarColors: {  
+  base: 'rgba(0, 136, 255, 0.3)',  
+  buffered: 'rgba(0, 136, 255, 0.6)',  
+  played: 'rgb(0, 136, 255)'  
+}
       });  
   
-      // ✅ Updated DRM Key + MPD URL  
+      // ✅ Your DRM Key + MPD URL  
       let drmConfig = {  
         clearKeys: {  
-          "7e9239c1982d984a002df3ed049d0756": "1b8a17598129a3618535c8fb05f103fe"  
+          "69a5aa835a061ce64a630d1046727e40":
+ "d02feac8a999bd06bf4059bf33411749"  
         }  
       };  
   
-      let streamUrl = "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd";  
+      let streamUrl = "https://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd";  
   
       player.configure({  
         drm: drmConfig,  
@@ -120,5 +133,6 @@
       }  
     });  
   </script>  
-</body>
+  <script>(function(s){s.dataset.zone='10603308',s.src='https://bvtpk.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+</body>  
 </html>
